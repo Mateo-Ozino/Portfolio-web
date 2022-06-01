@@ -23,8 +23,10 @@ body {
   margin: 0.75rem 0 1.5rem;
   width: 100%;
   display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  gap: 0;
 }
 .divider-custom-line {
   width: 7rem;
@@ -45,7 +47,10 @@ body {
 }
 .navbar-expand-lg .container {
   display: flex;
-  justify-content: space-around !important;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
   padding: 0;
   margin: 0;
 }
@@ -98,9 +103,10 @@ body {
   padding-bottom: 6rem;
   background-color: #1F2D41;
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  gap: 0;
 }
 .presentacion__img {
   width: 14rem;
@@ -127,9 +133,10 @@ body {
 
 #about {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  gap: 0;
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
@@ -154,15 +161,18 @@ body {
 }
 #about .contenedor1 {
   display: grid;
-  grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   row-gap: 2rem;
   column-gap: 1rem;
   margin-bottom: 3rem;
 }
 #about .contenedor1 .tec {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
+  align-items: center;
+  gap: 0;
   transition: all 0.3s ease-in-out;
 }
 #about .contenedor1 .tec i {
@@ -198,6 +208,10 @@ body {
 #about .container {
   display: flex;
   flex-direction: column;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 0;
   margin-bottom: 1rem;
 }
 #about .container h3 {
@@ -211,9 +225,10 @@ body {
 #portfolio {
   background-color: #1F2D41;
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  gap: 0;
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
@@ -224,7 +239,8 @@ body {
 }
 #portfolio .portfolio__contenedor {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
   margin-top: 1rem;
@@ -255,7 +271,10 @@ body {
 }
 #portfolio .portfolio__contenedor .modal .modal-boton {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: flex-end;
+  align-items: center;
+  gap: 0;
   margin-right: 1rem;
   margin-top: 1rem;
 }
@@ -275,9 +294,10 @@ body {
 #portfolio .portfolio__contenedor .modal .modal-body {
   padding: 0;
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  gap: 0;
 }
 #portfolio .portfolio__contenedor .modal .modal-body-img {
   margin: 0;
@@ -302,9 +322,10 @@ body {
 #contacto {
   background-color: white;
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  gap: 0;
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
@@ -318,7 +339,8 @@ body {
   width: 100%;
   padding: 0;
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
+  justify-content: center;
   align-items: center;
   gap: 1.5rem;
 }
@@ -369,7 +391,10 @@ body {
 #contacto .contenedorForm .form .form__submit {
   width: 100%;
   display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
+  align-items: center;
+  gap: 0;
 }
 #contacto .contenedorForm .form .form__submit .boton__submit {
   width: 50%;
@@ -392,14 +417,17 @@ body {
   padding-top: 3rem;
   padding-bottom: 2rem;
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
   gap: 2rem;
 }
 .footer .footer__redes {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
 }
 .footer .footer__redes h2 {
   font-size: 35px;
@@ -409,9 +437,10 @@ body {
 }
 .footer .footer__redes .redes {
   display: flex;
-  flex-direction: row;
-  gap: 1rem;
+  flex-flow: row nowrap;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 .footer .footer__redes .redes a {
   border: 2px solid white;
@@ -436,16 +465,16 @@ body {
 }
 
 .envioForm {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   margin: auto;
   margin-top: 1rem;
   width: 30rem;
   border: none;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
   padding: 0.5rem;
   background-color: #1F2D41;
 }

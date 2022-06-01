@@ -1,0 +1,20 @@
+//VARIABLES
+$color1: #FA4F4F;
+$color2: #1F2D41;
+
+//MIXINS
+@mixin flex($flexFlow, $justifyContent, $alignItems, $gap){
+    display: flex;
+    flex-flow: $flexFlow;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    gap: $gap;
+}
+
+@mixin grid($cantColumnas, $medidaColumnas, $cantFilas, $medidaFilas, $rowGap, $columnGap) {
+    display: grid;
+    grid-template-columns: repeat($cantColumnas, $medidaColumnas);
+    grid-template-rows: repeat($cantFilas, $medidaFilas);
+    row-gap: $rowGap;
+    column-gap: $columnGap;
+}

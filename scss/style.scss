@@ -1,112 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-$color1: #FA4F4F;
-$color2: #1F2D41;
+@import "vars-mixins";
+@import "general";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
-
-img{
-    width: 100%;
-    height: 100%;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-body{
-    position: relative;
-}
-
-.divider-custom {
-    margin: .75rem 0 1.5rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &-line{
-        width: 7rem;
-        height: 7px;
-        background-color: $color1;
-        margin-left: .5rem;
-        margin-right: .5rem;
-        border-radius: 15px;
-    }
-    &-icon{
-        font-size: 1.5rem;
-        color: $color1;
-    }
-}
-
-
-.navbar-expand-lg{
-    background-color: $color1;
-    justify-content: center;
-    .container{
-        display: flex;
-        justify-content: space-around !important;
-        padding: 0;
-        margin: 0;
-        .navbar-collapse{
-            flex-grow: 0;
-            .navbar-nav{
-                gap: 1rem;
-                align-items: center;
-                margin-left: 1rem;
-                .nav-item{
-                    display: inline;
-                    .nav-link{
-                        padding: 0;
-                        margin: 0;
-                        color: white;
-                        font-weight: 600;
-                        font-size: 20px;
-                        text-transform: uppercase;
-                        &:hover{
-                            color: $color2;
-                        }
-                    }
-                    .active{
-                        color: $color2;
-                    }
-                }
-            }
-        }
-        .navbar-brand{
-            color: white;
-            font-size: 34px;
-            font-weight: 700;
-            margin: 0;
-            text-transform: uppercase;
-        }
-        .navbar-toggler{
-            border: none;
-            background-color: $color2;
-            padding: 0;
-        }
-        .fa-bars{
-            font-size: 30px;
-            color: white;
-            padding: 10px 20px 10px 20px;; 
-        }
-    }    
-}
-
-
+//PRESENTACION
 .presentacion{
     padding: 1rem;
     padding-top: 7.5rem;
     padding-bottom: 6rem;
     background-color: $color2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(column nowrap, center, center, 0);
     &__img{
         width: 14rem;
         height: 14rem;
@@ -131,12 +34,9 @@ body{
     }
 }
 
-
+//ABOUT
 #about{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(column nowrap, center, center, 0);
     padding-top: 6rem;
     padding-bottom: 6rem;
     .about__h1{
@@ -163,15 +63,10 @@ body{
         margin-top: 1rem;
     }
     .contenedor1{
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: repeat(4, 1fr);
-        row-gap: 2rem;
-        column-gap: 1rem;
+        @include grid(4, 1fr, 2, 1fr, 2rem, 1rem);
         margin-bottom: 3rem;
         .tec{
-            display: flex;
-            justify-content: center;
+            @include flex(row nowrap, center, center, 0);
             transition: all .3s ease-in-out;
             i{
                 font-size: 5rem;
@@ -208,6 +103,7 @@ body{
     .container{
         display: flex;
         flex-direction: column;
+        @include flex(column nowrap, center, null, 0);
         margin-bottom: 1rem;
         h3{
             font-size: 30px;
@@ -219,13 +115,10 @@ body{
     }
 }
 
-
+//PORTFOLIO
 #portfolio{
     background-color: $color2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(column nowrap, center, center, 0);
     padding-top: 6rem;
     padding-bottom: 6rem;
     .portfolio__h1{
@@ -238,10 +131,7 @@ body{
         font-size: 45px;
     }
     .portfolio__contenedor{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+        @include flex(column nowrap, center, center, 1rem);
         margin-top: 1rem;
         .item{
             width: 12rem;
@@ -267,8 +157,7 @@ body{
         .modal{
             border-radius: 15px;
             .modal-boton{
-                display: flex;
-                justify-content: flex-end;
+                @include flex(row nowrap, flex-end, center, 0);
                 margin-right: 1rem;
                 margin-top: 1rem;
                 .portfolio__button--close{
@@ -287,10 +176,7 @@ body{
             }
             .modal-body{
                 padding: 0;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @include flex(column nowrap, center, center, 0);
                 &-img{
                     margin: 0;
                     width: 10rem;
@@ -316,13 +202,10 @@ body{
     }
 }
 
-
+//CONTACTO
 #contacto{
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(column nowrap, center, center, 0);
     padding-top: 6rem;
     padding-bottom: 6rem;
     .contacto__h1{
@@ -334,10 +217,7 @@ body{
         .form{
             width: 100%;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1.5rem;
+            @include flex(column nowrap, center, center, 1.5rem);
             .form-floating{
                 width: 100%;
                 .form-control{
@@ -384,8 +264,7 @@ body{
             }
             .form__submit{
                 width: 100%;
-                display: flex;
-                justify-content: center;
+                @include flex(row nowrap, center, center, 0);
                 .boton__submit{
                     width: 50%;
                     background-color: $color1;
@@ -406,18 +285,14 @@ body{
     }
 }
 
+//FOOTER
 .footer{
     background-color: $color1;
     padding-top: 3rem;
     padding-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2rem;
+    @include flex(column nowrap, space-around, center, 2rem);
     .footer__redes{
-        display: flex;
-        flex-direction: column;
+        @include flex(column nowrap, center, center, 0);
         h2{
             font-size: 35px;
             margin: 0;
@@ -425,10 +300,7 @@ body{
             color: white;
         }
         .redes{
-            display: flex;
-            flex-direction: row;
-            gap: 1rem;
-            justify-content: center;
+            @include flex(row nowrap, center, center, 1rem);
             a{
                 border: 2px solid white;
                 background-color: transparent;
@@ -456,17 +328,14 @@ body{
     }
 }    
 
+//TARJETA POST ENVIO FORMULARIO
 .envioForm{
+    @include flex(column nowrap, center, center, 1rem);
     margin: auto;
     margin-top: 1rem;
     width: 30rem;
     border: none;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
     padding: .5rem;
     background-color: #1F2D41;
     & h1{
@@ -506,88 +375,4 @@ body{
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .container{
-        .navbar-collapse{
-            .navbar-nav{
-                margin-left: 1rem;
-                margin-top: 1rem;
-                padding: 0;
-            }
-        }
-    }
-
-    #about{
-        .row{
-            margin-left: 1.5rem;
-            margin-right: 1.5rem;
-        }
-        .contenedor1{
-            .tec{
-                i{
-                    font-size: 3rem;
-                }
-            }
-            .python{
-                width: 3rem;
-            }
-        }
-    }
-
-    #contacto{
-        .contacto__h1{
-            font-size: 55px;
-        }
-        .contenedorForm{
-            width: 90%;
-        }
-    }
-
-    .envioForm{
-        width: 90%;
-    }
-}
-
-@media only screen and (max-width: 425px) {
-    #about{
-        .contenedor1{
-            column-gap: .5rem;
-            .tec{
-                i{
-                    font-size: 2.5rem;
-                }
-            }
-            .python{
-                width: 2.5rem;
-            }
-        }
-    }
-
-    #portfolio{
-        .portfolio__h1{
-            font-size: 50px;
-        }
-    }
-
-    #contacto{
-        .contacto__h1{
-            font-size: 50px;
-        }
-    }
-}
-
-@media only screen and (max-width: 375px){
-    .navbar-expand-lg{
-        .container{
-            .navbar-brand{
-                font-size: 25px;
-            }
-        }
-    }
-
-    #contacto{
-        .contacto__h1{
-            font-size: 40px;
-        }
-    }
-}
+@import "media";

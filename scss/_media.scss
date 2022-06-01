@@ -1,0 +1,87 @@
+@import "vars-mixins";
+
+@media only screen and (max-width: 768px) {
+    .container{
+        .navbar-collapse{
+            .navbar-nav{
+                margin-left: 1rem;
+                margin-top: 1rem;
+                padding: 0;
+            }
+        }
+    }
+
+    #about{
+        .row{
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+        }
+        .contenedor1{
+            .tec{
+                i{
+                    font-size: 3rem;
+                }
+            }
+            .python{
+                width: 3rem;
+            }
+        }
+    }
+
+    #contacto{
+        .contacto__h1{
+            font-size: 55px;
+        }
+        .contenedorForm{
+            width: 90%;
+        }
+    }
+
+    .envioForm{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #about{
+        .contenedor1{
+            column-gap: .5rem;
+            .tec{
+                i{
+                    font-size: 2.5rem;
+                }
+            }
+            .python{
+                width: 2.5rem;
+            }
+        }
+    }
+
+    #portfolio{
+        .portfolio__h1{
+            font-size: 50px;
+        }
+    }
+
+    #contacto{
+        .contacto__h1{
+            font-size: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .navbar-expand-lg{
+        .container{
+            .navbar-brand{
+                font-size: 25px;
+            }
+        }
+    }
+
+    #contacto{
+        .contacto__h1{
+            font-size: 40px;
+        }
+    }
+}
