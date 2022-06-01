@@ -456,39 +456,52 @@ body{
     }
 }    
 
-@media only screen and (max-width: 375px){
-    .navbar-expand-lg{
-        .container{
-            .navbar-brand{
-                font-size: 25px;
+.envioForm{
+    margin: auto;
+    margin-top: 1rem;
+    width: 30rem;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem;
+    background-color: #1F2D41;
+    & h1{
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        margin-bottom: .5rem;
+    }
+    & p{
+        font-size: 25px;
+        color: white;
+        text-align: center;
+        margin-bottom: .5rem;
+    }
+    .botonEnvio{
+        height: 3rem;
+        border: none;
+        border-radius: 10px;
+        background-color: #FA4F4F;
+        cursor: pointer;
+        margin-bottom: 1rem;
+        padding: 0;
+        & a{
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 1rem;
+            color: white;
+            &:hover{
+                color: #FA4F4F;
             }
         }
-    }
-
-    #contacto{
-        .contacto__h1{
-            font-size: 40px;
-        }
-    }
-}
-
-@media only screen and (max-width: 425px) {
-    #about{
-        .contenedor1{
-            .tec{
-                i{
-                    font-size: 4rem;
-                }
-            }
-            .python{
-                width: 4rem;
-            }
-        }
-    }
-
-    #contacto{
-        .contenedorForm{
-            width: 90%;
+        &:hover{
+            background-color: white;
+            color: #FA4F4F;
         }
     }
 }
@@ -508,6 +521,73 @@ body{
         .row{
             margin-left: 1.5rem;
             margin-right: 1.5rem;
+        }
+        .contenedor1{
+            .tec{
+                i{
+                    font-size: 3rem;
+                }
+            }
+            .python{
+                width: 3rem;
+            }
+        }
+    }
+
+    #contacto{
+        .contacto__h1{
+            font-size: 55px;
+        }
+        .contenedorForm{
+            width: 90%;
+        }
+    }
+
+    .envioForm{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #about{
+        .contenedor1{
+            column-gap: .5rem;
+            .tec{
+                i{
+                    font-size: 2.5rem;
+                }
+            }
+            .python{
+                width: 2.5rem;
+            }
+        }
+    }
+
+    #portfolio{
+        .portfolio__h1{
+            font-size: 50px;
+        }
+    }
+
+    #contacto{
+        .contacto__h1{
+            font-size: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .navbar-expand-lg{
+        .container{
+            .navbar-brand{
+                font-size: 25px;
+            }
+        }
+    }
+
+    #contacto{
+        .contacto__h1{
+            font-size: 40px;
         }
     }
 }

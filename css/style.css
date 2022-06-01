@@ -435,27 +435,56 @@ body {
   margin: 0;
 }
 
-@media only screen and (max-width: 375px) {
-  .navbar-expand-lg .container .navbar-brand {
-    font-size: 25px;
-  }
-
-  #contacto .contacto__h1 {
-    font-size: 40px;
-  }
+.envioForm {
+  margin: auto;
+  margin-top: 1rem;
+  width: 30rem;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  background-color: #1F2D41;
 }
-@media only screen and (max-width: 425px) {
-  #about .contenedor1 .tec i {
-    font-size: 4rem;
-  }
-  #about .contenedor1 .python {
-    width: 4rem;
-  }
-
-  #contacto .contenedorForm {
-    width: 90%;
-  }
+.envioForm h1 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
+.envioForm p {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.envioForm .botonEnvio {
+  height: 3rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #FA4F4F;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+.envioForm .botonEnvio a {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 1rem;
+  color: white;
+}
+.envioForm .botonEnvio a:hover {
+  color: #FA4F4F;
+}
+.envioForm .botonEnvio:hover {
+  background-color: white;
+  color: #FA4F4F;
+}
+
 @media only screen and (max-width: 768px) {
   .container .navbar-collapse .navbar-nav {
     margin-left: 1rem;
@@ -466,6 +495,51 @@ body {
   #about .row {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+  }
+  #about .contenedor1 .tec i {
+    font-size: 3rem;
+  }
+  #about .contenedor1 .python {
+    width: 3rem;
+  }
+
+  #contacto .contacto__h1 {
+    font-size: 55px;
+  }
+  #contacto .contenedorForm {
+    width: 90%;
+  }
+
+  .envioForm {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #about .contenedor1 {
+    column-gap: 0.5rem;
+  }
+  #about .contenedor1 .tec i {
+    font-size: 2.5rem;
+  }
+  #about .contenedor1 .python {
+    width: 2.5rem;
+  }
+
+  #portfolio .portfolio__h1 {
+    font-size: 50px;
+  }
+
+  #contacto .contacto__h1 {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .navbar-expand-lg .container .navbar-brand {
+    font-size: 25px;
+  }
+
+  #contacto .contacto__h1 {
+    font-size: 40px;
   }
 }
 
