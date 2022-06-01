@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+.divider-custom {
+  margin: 0.75rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divider-custom-line {
+  width: 7rem;
+  height: 7px;
+  background-color: #FA4F4F;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 15px;
+}
+.divider-custom-icon {
+  font-size: 1.5rem;
+  color: #FA4F4F;
+}
+
+.navbar-expand-lg {
+  background-color: #FA4F4F;
+  justify-content: center;
+}
+.navbar-expand-lg .container {
+  display: flex;
+  justify-content: space-around !important;
+  padding: 0;
+  margin: 0;
+}
+.navbar-expand-lg .container .navbar-collapse {
+  flex-grow: 0;
+}
+.navbar-expand-lg .container .navbar-collapse .navbar-nav {
+  gap: 1rem;
+  align-items: center;
+  margin-left: 1rem;
+}
+.navbar-expand-lg .container .navbar-collapse .navbar-nav .nav-item {
+  display: inline;
+}
+.navbar-expand-lg .container .navbar-collapse .navbar-nav .nav-item .nav-link {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.navbar-expand-lg .container .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #1F2D41;
+}
+.navbar-expand-lg .container .navbar-collapse .navbar-nav .nav-item .active {
+  color: #1F2D41;
+}
+.navbar-expand-lg .container .navbar-brand {
+  color: white;
+  font-size: 34px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+}
+.navbar-expand-lg .container .navbar-toggler {
+  border: none;
+  background-color: #1F2D41;
+  padding: 0;
+}
+.navbar-expand-lg .container .fa-bars {
+  font-size: 30px;
+  color: white;
+  padding: 10px 20px 10px 20px;
+}
+
+.presentacion {
+  padding: 1rem;
+  padding-top: 7.5rem;
+  padding-bottom: 6rem;
+  background-color: #1F2D41;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.presentacion__img {
+  width: 14rem;
+  height: 14rem;
+  border: 0;
+  border-radius: 50%;
+  background: url("../assets/Foto-portfolio.png");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 3rem;
+}
+.presentacion__h1, #contacto .contacto__h1, #portfolio .portfolio__h1, #about .about__h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+.presentacion__h2, #portfolio .portfolio__h2, #about .about__h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: white;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+#about .about__h1 {
+  color: #1F2D41;
+}
+#about .row {
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+#about .row .about__p p {
+  line-height: 35px;
+  color: #1F2D41;
+  font-size: 23px;
+  font-weight: 400;
+}
+#about .about__h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #1F2D41;
+  margin-top: 1rem;
+}
+#about .contenedor1 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 2rem;
+  column-gap: 1rem;
+  margin-bottom: 3rem;
+}
+#about .contenedor1 .tec {
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+#about .contenedor1 .tec i {
+  font-size: 5rem;
+}
+#about .contenedor1 .tec .fa-html5 {
+  color: #E34F26;
+}
+#about .contenedor1 .tec .fa-css3-alt {
+  color: #1572B6;
+}
+#about .contenedor1 .tec .fa-sass {
+  color: #CC6699;
+}
+#about .contenedor1 .tec .fa-bootstrap {
+  color: #563D7C;
+}
+#about .contenedor1 .tec .fa-js-square {
+  color: #F0DB4F;
+}
+#about .contenedor1 .tec .fa-github {
+  color: #24292E;
+}
+#about .contenedor1 .tec .fa-git-alt {
+  color: #ff5437;
+}
+#about .contenedor1 .tec:hover {
+  transform: scale(1.2);
+}
+#about .contenedor1 .python {
+  width: 5rem;
+}
+#about .container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+#about .container h3 {
+  font-size: 30px;
+  margin: 0;
+}
+#about .container .progress-bar {
+  background-color: #FA4F4F;
+}
+
+#portfolio {
+  background-color: #1F2D41;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+#portfolio .portfolio__h2 {
+  color: #FA4F4F;
+  margin: 0;
+  font-size: 45px;
+}
+#portfolio .portfolio__contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+#portfolio .portfolio__contenedor .item {
+  width: 12rem;
+  padding: 1rem;
+  background: linear-gradient(to right, #A3C5DE 0%, 17.9531663656%, #FD1018 35.9063327312%, 50.0867307186%, #FFB11D 64.267128706%, 82.133564353%, #A3C5DE 100%);
+  border-radius: 15px;
+  padding: 1rem;
+}
+#portfolio .portfolio__contenedor .portfolio__button, #portfolio .portfolio__contenedor .modal .modal-body .portfolio__button--sitio {
+  background-color: #FA4F4F;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 15px;
+  padding: 0.5rem;
+  font-size: 25px;
+  transition: all 0.3s ease-in-out;
+}
+#portfolio .portfolio__contenedor .portfolio__button:hover, #portfolio .portfolio__contenedor .modal .modal-body .portfolio__button--sitio:hover {
+  background-color: white;
+  color: #FA4F4F;
+}
+#portfolio .portfolio__contenedor .modal {
+  border-radius: 15px;
+}
+#portfolio .portfolio__contenedor .modal .modal-boton {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+#portfolio .portfolio__contenedor .modal .modal-boton .portfolio__button--close {
+  border: none;
+  background-color: white;
+}
+#portfolio .portfolio__contenedor .modal .modal-boton .portfolio__button--close i {
+  font-size: 50px;
+  color: #FA4F4F;
+}
+#portfolio .portfolio__contenedor .modal .modal-header {
+  border: none;
+  justify-content: center;
+  padding: 0;
+}
+#portfolio .portfolio__contenedor .modal .modal-body {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#portfolio .portfolio__contenedor .modal .modal-body-img {
+  margin: 0;
+  width: 10rem;
+}
+#portfolio .portfolio__contenedor .modal .modal-body-p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+#portfolio .portfolio__contenedor .modal .modal-body .portfolio__button--sitio {
+  margin-bottom: 1rem;
+}
+#portfolio .portfolio__contenedor .modal .modal-body .portfolio__button--sitio:hover {
+  background-color: #1F2D41;
+  color: white;
+}
+
+#contacto {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+#contacto .contacto__h1 {
+  color: #1F2D41;
+}
+#contacto .contenedorForm {
+  width: 25rem;
+}
+#contacto .contenedorForm .form {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+#contacto .contenedorForm .form .form-floating {
+  width: 100%;
+}
+#contacto .contenedorForm .form .form-floating .form-control {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #FA4F4F;
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #1F2D41;
+  border-radius: 0;
+}
+#contacto .contenedorForm .form .form-floating .form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
+#contacto .contenedorForm .form .form-floating .form__label {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1F2D41;
+}
+#contacto .contenedorForm .form .form__mensaje {
+  width: 100%;
+}
+#contacto .contenedorForm .form .form__mensaje .form-control {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #FA4F4F;
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #1F2D41;
+  border-radius: 0;
+}
+#contacto .contenedorForm .form .form__mensaje .form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
+#contacto .contenedorForm .form .form__mensaje .form__label {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1F2D41;
+}
+#contacto .contenedorForm .form .form__submit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#contacto .contenedorForm .form .form__submit .boton__submit {
+  width: 50%;
+  background-color: #FA4F4F;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 15px;
+  padding: 5px;
+  font-size: 30px;
+  transition: all 0.3s ease-in-out;
+}
+#contacto .contenedorForm .form .form__submit .boton__submit:hover {
+  background-color: #1F2D41;
+  color: white;
+}
+
+.footer {
+  background-color: #FA4F4F;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+.footer .footer__redes {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer__redes h2 {
+  font-size: 35px;
+  margin: 0;
+  width: 100%;
+  color: white;
+}
+.footer .footer__redes .redes {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+}
+.footer .footer__redes .redes a {
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 100%;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.footer .footer__redes .redes a i {
+  padding: 11px;
+  font-size: 30px;
+}
+.footer .footer__redes .redes a:hover {
+  background-color: white;
+  color: #1F2D41;
+}
+.footer .footer__copy p {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+@media only screen and (max-width: 375px) {
+  .navbar-expand-lg .container .navbar-brand {
+    font-size: 25px;
+  }
+
+  #contacto .contacto__h1 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #about .contenedor1 .tec i {
+    font-size: 4rem;
+  }
+  #about .contenedor1 .python {
+    width: 4rem;
+  }
+
+  #contacto .contenedorForm {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container .navbar-collapse .navbar-nav {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    padding: 0;
+  }
+
+  #about .row {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
