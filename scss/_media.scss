@@ -37,6 +37,33 @@
         }
     }
 
+    .footer{
+        @include flex(column nowrap, space-around, center, 1rem);
+        .footer__contacto{
+            @include flex(column nowrap, center, center, 1rem);
+            .footer__mail{
+                .fa-envelope{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+            .footer__redes{
+                h2{
+                    font-size: 28px;
+                }
+                .redes{
+                    a{
+                        i{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .envioForm{
         width: 90%;
     }
@@ -82,6 +109,16 @@
     #contacto{
         .contacto__h1{
             font-size: 40px;
+        }
+    }
+
+    .footer{
+        .footer__contacto{
+            .footer__mail{
+                p{
+                    font-size: 18px;
+                }
+            }
         }
     }
 }

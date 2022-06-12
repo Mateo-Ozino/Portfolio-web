@@ -291,33 +291,51 @@
     padding-top: 3rem;
     padding-bottom: 2rem;
     @include flex(column nowrap, space-around, center, 2rem);
-    .footer__redes{
-        @include flex(column nowrap, center, center, 0);
-        h2{
-            font-size: 35px;
-            margin: 0;
-            width: 100%;
-            color: white;
-        }
-        .redes{
-            @include flex(row nowrap, center, center, 1rem);
-            a{
-                border: 2px solid white;
-                background-color: transparent;
-                border-radius: 100%;
+    .footer__contacto{
+        @include flex(row nowrap, space-around, center, 2rem);
+        .footer__mail{
+            @include flex(row nowrap, center, center, .5rem);
+            .fa-envelope{
+                margin: 0;
+                padding: 0;
                 color: white;
-                transition: all .3s ease-in-out;
-                i{
-                    padding: 11px;
-                    font-size: 30px;
-                }
-                &:hover{
-                    background-color: white;
-                    color: $color2;
+                font-size: 25px;
+            }
+            p{
+                margin: 0;
+                color: white;
+                font-size: 25px;
+            }
+        }
+        .footer__redes{
+            @include flex(column nowrap, center, center, 0);
+            h2{
+                font-size: 30px;
+                margin: 0;
+                width: 100%;
+                color: white;
+            }
+            .redes{
+                @include flex(row nowrap, center, center, 1rem);
+                a{
+                    border: 2px solid white;
+                    background-color: transparent;
+                    border-radius: 50%;
+                    color: white;
+                    transition: all .3s ease-in-out;
+                    i{
+                        padding: 11px;
+                        font-size: 26px;
+                    }
+                    &:hover{
+                        background-color: white;
+                        color: $color2;
+                    }
                 }
             }
         }
     }
+    
     .footer__copy{
         p{
             color: white;

@@ -47,7 +47,6 @@ body {
 }
 .navbar-expand-lg .container {
   display: flex;
-  flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
   gap: 0;
@@ -422,38 +421,63 @@ body {
   align-items: center;
   gap: 2rem;
 }
-.footer .footer__redes {
+.footer .footer__contacto {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+.footer .footer__contacto .footer__mail {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer .footer__contacto .footer__mail .fa-envelope {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 25px;
+}
+.footer .footer__contacto .footer__mail p {
+  margin: 0;
+  color: white;
+  font-size: 25px;
+}
+.footer .footer__contacto .footer__redes {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   gap: 0;
 }
-.footer .footer__redes h2 {
-  font-size: 35px;
+.footer .footer__contacto .footer__redes h2 {
+  font-size: 30px;
   margin: 0;
   width: 100%;
   color: white;
 }
-.footer .footer__redes .redes {
+.footer .footer__contacto .footer__redes .redes {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
-.footer .footer__redes .redes a {
+.footer .footer__contacto .footer__redes .redes a {
   border: 2px solid white;
   background-color: transparent;
-  border-radius: 100%;
+  border-radius: 50%;
   color: white;
   transition: all 0.3s ease-in-out;
 }
-.footer .footer__redes .redes a i {
+.footer .footer__contacto .footer__redes .redes a i {
   padding: 11px;
-  font-size: 30px;
+  font-size: 26px;
 }
-.footer .footer__redes .redes a:hover {
+.footer .footer__contacto .footer__redes .redes a:hover {
   background-color: white;
   color: #1F2D41;
 }
@@ -539,6 +563,33 @@ body {
     width: 90%;
   }
 
+  .footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+  }
+  .footer .footer__contacto {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .footer .footer__contacto .footer__mail .fa-envelope {
+    font-size: 20px;
+  }
+  .footer .footer__contacto .footer__mail p {
+    font-size: 20px;
+  }
+  .footer .footer__contacto .footer__redes h2 {
+    font-size: 28px;
+  }
+  .footer .footer__contacto .footer__redes .redes a i {
+    font-size: 20px;
+  }
+
   .envioForm {
     width: 90%;
   }
@@ -569,6 +620,10 @@ body {
 
   #contacto .contacto__h1 {
     font-size: 40px;
+  }
+
+  .footer .footer__contacto .footer__mail p {
+    font-size: 18px;
   }
 }
 

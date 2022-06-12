@@ -42,7 +42,7 @@ body{
     background-color: $color1;
     justify-content: center;
     .container{
-        @include flex(row nowrap, space-around, center, 0);
+        @include flex(null, space-around, center, 0);
         padding: 0;
         margin: 0;
         .navbar-collapse{
