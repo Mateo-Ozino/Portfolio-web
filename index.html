@@ -61,7 +61,7 @@
                     <p class="text-center text-sm-start">Hola! Soy Mateo Ozino, desarrollador web front-end en camino a full stack. Siempre fuí muy cercano a la tecnología, me resulta un mundo muy interesante y lleno de oportunidades. Pero no fue hasta fines de 2021 que decidí introducirme del todo.</p>
                 </div>
                 <div class="about__p col-sm-6">
-                    <p class="text-center text-sm-start">Puesto que tenía algunos conocimientos previos sobre HTML y JS, decidí comenzar por ahí.    Actualmente me encuentro en formación en Desarrollo Web y mi objetivo es continuar expandiéndome en esta área y así poder crear sitios más innovadores y profesionales.</p>
+                    <p class="text-center text-sm-start">Puesto que tenía algunos conocimientos previos sobre HTML y JS, decidí comenzar por ahí. Actualmente me encuentro formándome como Full Stack Developer y mi objetivo es continuar expandiéndome en esta área y así poder crear sitios más innovadores y profesionales.</p>
                 </div>
             </article>
             <section>
@@ -69,16 +69,28 @@
                 <div class="contenedor1">
                     <div class="tec"><i class="fa-brands fa-html5"></i></div>
                     <div class="tec"><i class="fa-brands fa-css3-alt"></i></div>
+                    <div class="tec"><i class="fa-brands fa-sass"></i></div>
+                    <div class="tec"><i class="fa-brands fa-bootstrap"></i></div>
+                    <div class="tec"><i class="fa-brands fa-js-square"></i></div>
                     <div class="tec">
                         <div class="python">
                             <img src="assets/1024px-Python-logo-notext.svg.png" alt="">
                         </div>
                     </div>
-                    <div class="tec"><i class="fa-brands fa-js-square"></i></div>
-                    <div class="tec"><i class="fa-brands fa-sass"></i></div>
-                    <div class="tec"><i class="fa-brands fa-bootstrap"></i></div>
+                    <div class="tec">
+                        <div class="python">
+                            <img src="assets/django.png" alt="">
+                        </div>
+                    </div>
+                    <div class="tec">
+                        <div class="python">
+                            <img src="assets/sqlite.png" alt="">
+                        </div>
+                    </div>
+                    <div></div>
                     <div class="tec"><i class="fa-brands fa-github"></i></div>
                     <div class="tec"><i class="fa-brands fa-git-alt"></i></div>
+                    <div></div>
                 </div>
             </section>
             <h2 class="about__h2">Skills</h2>
@@ -97,13 +109,25 @@
             <div class="container">
                 <h3>Javascript</h3>
                 <div class="progress">
-                    <div class="progress-bar" style="width:65%"></div>
+                    <div class="progress-bar" style="width:75%"></div>
                 </div>
             </div>
             <div class="container">
                 <h3>Python</h3>
                 <div class="progress">
-                    <div class="progress-bar" style="width:10%"></div>
+                    <div class="progress-bar" style="width:70%"></div>
+                </div>
+            </div>
+            <div class="container">
+                <h3>Django</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width:70%"></div>
+                </div>
+            </div>
+            <div class="container">
+                <h3>SQL</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width:50%"></div>
                 </div>
             </div>
         </section>
@@ -115,35 +139,66 @@
                 <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
-            <div class="portfolio__contenedor">
-                <div class="item">
-                    <img src="assets/logo.svg" alt="">
-                </div>
-                <button type="button" class="portfolio__button" data-bs-toggle="modal" data-bs-target="#modal1">Ver más</button>
-                <!-- MODAL -->
-                <div class="modal modal-lg fade" id="modal1">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-boton">
-                                <button type="button" class="portfolio__button--close" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
-                            </div>
-                            <div class="modal-header">
-                                <h2 class="modal-title portfolio__h2">Che! Llueve!</h2>
-                            </div>
-                            <div class="divider-custom">
-                                <div class="divider-custom-line"></div>
-                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                <div class="divider-custom-line"></div>
-                            </div>
-                            <div class="modal-body">
-                                <div class="modal-body-img"><img src="assets/logo.svg" alt=""></div>
-                                <p class="modal-body-p text-center">Che! LLueve! es mi primer gran proyecto. La idea es propia, así como el diseño y el desarrollo del sitio.</p>
-                                <a href="https://chellueve.netlify.app/" target="_blank"><button class="portfolio__button--sitio">Ir al sitio</button></a>
+            <section class="proyectos">
+                <article class="portfolio__contenedor">
+                    <div class="item">
+                        <img src="assets/logo.svg" alt="">
+                    </div>
+                    <button type="button" class="portfolio__button" data-bs-toggle="modal" data-bs-target="#modal1">Ver más</button>
+                    <!-- MODAL -->
+                    <div class="modal modal-lg fade" id="modal1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-boton">
+                                    <button type="button" class="portfolio__button--close" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+                                <div class="modal-header">
+                                    <h2 class="modal-title portfolio__h2">Che! Llueve!</h2>
+                                </div>
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modal-body-img"><img src="assets/logo.svg" alt=""></div>
+                                    <p class="modal-body-p text-center">Che! LLueve! es mi primer gran proyecto. La idea es propia, así como el diseño y el desarrollo del sitio.</p>
+                                    <a href="https://chellueve.netlify.app/" target="_blank"><button class="portfolio__button--sitio">Ir al sitio</button></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </article>
+                <article class="portfolio__contenedor">
+                    <div class="item item_snake">
+                        <img src="assets/Martin-Berube-Animal-Snake.ico" alt="">
+                    </div>
+                    <button type="button" class="portfolio__button" data-bs-toggle="modal" data-bs-target="#modal2">Ver más</button>
+                    <!-- MODAL -->
+                    <div class="modal modal-lg fade" id="modal2">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-boton">
+                                    <button type="button" class="portfolio__button--close" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+                                <div class="modal-header">
+                                    <h2 class="modal-title portfolio__h2">Snake game - Python</h2>
+                                </div>
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modal-body-img"><img src="assets/Martin-Berube-Animal-Snake.ico" alt=""></div>
+                                    <p class="modal-body-p text-center">Este es un clon del clásico juego "Snake" hecho por mí en Python.</p>
+                                    <a href="https://github.com/Mateo-Ozino/Snake-game-python" target="_blank"><button class="portfolio__button--sitio">Ir al repositorio</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </>
+            </section>
         </section>
         <!-- CONTACTO -->
         <section id="contacto">
