@@ -203,6 +203,7 @@ body {
 }
 #about .contenedor1 .python {
   width: 5rem;
+  user-select: none;
 }
 #about .container {
   display: flex;
