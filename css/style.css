@@ -212,7 +212,7 @@ body {
   flex-flow: column nowrap;
   justify-content: center;
   gap: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 #about .container h3 {
   font-size: 30px;
@@ -239,7 +239,7 @@ body {
 }
 #portfolio .proyectos {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -434,7 +434,7 @@ body {
 }
 .footer .footer__contacto {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   gap: 2rem;
@@ -547,6 +547,97 @@ body {
 .envioForm .botonEnvio:hover {
   background-color: white;
   color: #FA4F4F;
+}
+
+@media only screen and (max-width: 768px) {
+  .container .navbar-collapse .navbar-nav {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    padding: 0;
+  }
+  #about .row {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  #about .contenedor1 .tec i {
+    font-size: 3rem;
+  }
+  #about .contenedor1 .python {
+    width: 3rem;
+  }
+  #portfolio .proyectos {
+    padding: 15px;
+  }
+  #contacto .contacto__h1 {
+    font-size: 55px;
+  }
+  #contacto .contenedorForm {
+    width: 90%;
+  }
+  .footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+  }
+  .footer .footer__contacto {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .footer .footer__contacto .footer__mail .fa-envelope {
+    font-size: 20px;
+  }
+  .footer .footer__contacto .footer__mail p {
+    font-size: 20px;
+  }
+  .footer .footer__contacto .footer__redes h2 {
+    font-size: 28px;
+  }
+  .footer .footer__contacto .footer__redes .redes a i {
+    font-size: 20px;
+  }
+  .envioForm {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #about .about__h2 {
+    font-size: 1.8rem;
+  }
+  #about .container h3 {
+    font-size: 26px;
+  }
+  #about .contenedor1 {
+    column-gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  #about .contenedor1 .tec i {
+    font-size: 2.5rem;
+  }
+  #about .contenedor1 .python {
+    width: 2.5rem;
+  }
+  #portfolio .portfolio__h1 {
+    font-size: 45px;
+  }
+  #contacto .contacto__h1 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .navbar-expand-lg .container .navbar-brand {
+    font-size: 25px;
+  }
+  #contacto .contacto__h1 {
+    font-size: 40px;
+  }
+  .footer .footer__contacto .footer__mail p {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

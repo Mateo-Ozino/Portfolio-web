@@ -105,7 +105,7 @@
         display: flex;
         flex-direction: column;
         @include flex(column nowrap, center, null, 0);
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         h3{
             font-size: 30px;
             margin: 0;
@@ -132,7 +132,7 @@
         font-size: 45px;
     }
     .proyectos{
-        @include flex(row nowrap, center, center, 2rem);
+        @include flex(row wrap, center, center, 2rem);
         .portfolio__contenedor{
             @include flex(column nowrap, center, center, 1rem);
             margin-top: 1rem;
@@ -299,7 +299,7 @@
     padding-bottom: 2rem;
     @include flex(column nowrap, space-around, center, 2rem);
     .footer__contacto{
-        @include flex(row nowrap, space-around, center, 2rem);
+        @include flex(row wrap, space-around, center, 2rem);
         .footer__mail{
             @include flex(row nowrap, center, center, .5rem);
             .fa-envelope{
@@ -399,3 +399,5 @@
         }
     }
 }
+
+@import "media";

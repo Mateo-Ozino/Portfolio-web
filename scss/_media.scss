@@ -28,6 +28,13 @@
         }
     }
 
+    #portfolio {
+        .proyectos {
+            padding: 15px;
+            //@include flex(column nowrap, center, center, 2rem);
+        }
+    }
+
     #contacto{
         .contacto__h1{
             font-size: 55px;
@@ -71,8 +78,17 @@
 
 @media only screen and (max-width: 425px) {
     #about{
+        .about__h2 {
+            font-size: 1.8rem;
+        }
+        .container {
+            h3 {
+                font-size: 26px;
+            }
+        }
         .contenedor1{
             column-gap: .5rem;
+            margin-bottom: 1rem;
             .tec{
                 i{
                     font-size: 2.5rem;
@@ -86,13 +102,13 @@
 
     #portfolio{
         .portfolio__h1{
-            font-size: 50px;
+            font-size: 45px;
         }
     }
 
     #contacto{
         .contacto__h1{
-            font-size: 50px;
+            font-size: 40px;
         }
     }
 }
