@@ -1,13 +1,3 @@
-<?php
-$destino= "mateo.ozino@gmail.com";
-$nombre =  $_POST["nombre"];
-$mail =  $_POST["mail"];
-$mensaje =  $_POST["mensaje"];
-
-$mailHeader = "From:".$nombre."<".$mail.">\r\n";
-
-mail($destino, "Contacto desde formulario de portfolio", $mensaje, $mailHeader) or die("Error al enviar el mensaje");
-echo '
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -31,5 +21,3 @@ echo '
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 </html>
-';
-?>

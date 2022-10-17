@@ -345,6 +345,11 @@ body {
 #contacto .contenedorForm {
   width: 25rem;
 }
+#contacto .contenedorForm .aviso {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
 #contacto .contenedorForm .form {
   width: 100%;
   padding: 0;
@@ -356,6 +361,9 @@ body {
 }
 #contacto .contenedorForm .form .form-floating {
   width: 100%;
+}
+#contacto .contenedorForm .form .form-floating .valid-feedback, #contacto .contenedorForm .form .form-floating .invalid-feedback {
+  font-size: 20px;
 }
 #contacto .contenedorForm .form .form-floating .form-control {
   width: 100%;

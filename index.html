@@ -10,6 +10,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- CSS PROPIO -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- EMAILJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- INICIADOR EMAILJS -->
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('-nBrsTfk4nkn9SufI');
+        })();
+    </script>
     <title>Portfolio Web - Mateo Ozino</title>
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
@@ -268,27 +277,28 @@
                 <div class="divider-custom-line"></div>
             </div>
             <div class="contenedorForm">
-                <form action="php/contacto.php" method="POST" class="form needs-validation" name="contacto" novalidate netlify>
+                <div class="aviso"></div>
+                <form action="" method="POST" id="formulario" class="form needs-validation" name="contacto" netlify>
                     <div class="form-floating ">
-                        <input type="text" class="form-control" placeholder="Nombre" name="nombre" required>
+                        <input type="text" class="form-control" placeholder="Nombre" name="nombre">
                         <label for="nombre" class="form__label">Nombre completo</label>
                         <div class="valid-feedback">Correcto!</div>
                         <div class="invalid-feedback">Completa los datos correctamente</div>
                     </div>
                     <div class="form-floating">
-                        <input type="email" class="form-control" placeholder="Mail" name="mail" required>
+                        <input type="email" class="form-control" placeholder="Mail" name="mail">
                         <label for="mail" class="form__label">Mail</label>
                         <div class="valid-feedback">Correcto!</div>
                         <div class="invalid-feedback">Completa los datos correctamente</div>
                     </div>
                     <div class="form__mensaje">
                         <label for="mensaje" class="form__label">Mensaje</label>
-                        <textarea class="form-control" rows="2" cols="30" name="mensaje" placeholder="Escribí tu consulta" required></textarea>
+                        <textarea class="form-control" rows="2" cols="30" name="mensaje" placeholder="Escribí tu consulta"></textarea>
                         <div class="valid-feedback">Correcto!</div>
                         <div class="invalid-feedback">Completa tu consulta correctamente</div>
                     </div>
                     <div class="form__submit">
-                        <input type="submit" name="submit" value="Enviar" class="boton__submit">
+                        <input type="submit" name="submit" value="Enviar" class="boton__submit" @click="enviar">
                     </div>
                 </form>
             </div>
