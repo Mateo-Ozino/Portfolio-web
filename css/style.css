@@ -255,12 +255,9 @@ body {
 #portfolio .proyectos .portfolio__contenedor .item {
   width: 12rem;
   padding: 1rem;
-  background: linear-gradient(to right, #A3C5DE 0%, 17.9531663656%, #FD1018 35.9063327312%, 50.0867307186%, #FFB11D 64.267128706%, 82.133564353%, #A3C5DE 100%);
+  background: #FA4F4F;
   border-radius: 15px;
   padding: 1rem;
-}
-#portfolio .proyectos .portfolio__contenedor .item_snake {
-  background: #FA4F4F;
 }
 #portfolio .proyectos .portfolio__contenedor .portfolio__button, #portfolio .proyectos .portfolio__contenedor .modal .modal-body .portfolio__button--sitio {
   background-color: #FA4F4F;
@@ -362,8 +359,11 @@ body {
 #contacto .contenedorForm .form .form-floating {
   width: 100%;
 }
+#contacto .contenedorForm .form .form-floating label {
+  padding: 0.75rem 0.75rem;
+}
 #contacto .contenedorForm .form .form-floating .valid-feedback, #contacto .contenedorForm .form .form-floating .invalid-feedback {
-  font-size: 20px;
+  font-size: 17px;
 }
 #contacto .contenedorForm .form .form-floating .form-control {
   width: 100%;
@@ -374,13 +374,14 @@ body {
   font-weight: 500;
   color: #1F2D41;
   border-radius: 0;
+  padding-bottom: 5px;
 }
 #contacto .contenedorForm .form .form-floating .form-control:focus {
   box-shadow: none;
   outline: none;
 }
 #contacto .contenedorForm .form .form-floating .form__label {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #1F2D41;
 }
@@ -402,7 +403,7 @@ body {
   outline: none;
 }
 #contacto .contenedorForm .form .form__mensaje .form__label {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #1F2D41;
 }

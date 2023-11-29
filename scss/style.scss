@@ -139,12 +139,9 @@
             .item{
                 width: 12rem;
                 padding: 1rem;
-                background: linear-gradient(to right, #A3C5DE 0%, 17.953166365623474%, #FD1018 35.90633273124695%, 50.08673071861267%, #FFB11D 64.2671287059784%, 82.1335643529892%, #A3C5DE 100%);
+                background: $color1;
                 border-radius: 15px;
                 padding: 1rem;
-            }
-            .item_snake{
-                background: $color1;
             }
             .portfolio__button{
                 background-color: $color1;
@@ -231,9 +228,12 @@
             padding: 0;
             @include flex(column nowrap, center, center, 1.5rem);
             .form-floating{
+                label {
+                    padding: .75rem .75rem;
+                }
                 width: 100%;
                 .valid-feedback, .invalid-feedback {
-                    font-size: 20px;
+                    font-size: 17px;
                 }
                 .form-control{
                     width: 100%;
@@ -244,13 +244,14 @@
                     font-weight: 500;
                     color: $color2;
                     border-radius: 0;
+                    padding-bottom: 5px;
                     &:focus{
                         box-shadow: none;
                         outline: none;
                     }
                 }
                 .form__label{
-                    font-size: 1.3rem;
+                    font-size: 1.1rem;
                     font-weight: 600;
                     color: $color2;
                 }
@@ -272,7 +273,7 @@
                     }
                 }
                 .form__label{
-                    font-size: 1.3rem;
+                    font-size: 1.1rem;
                     font-weight: 600;
                     color: $color2;
                 }
